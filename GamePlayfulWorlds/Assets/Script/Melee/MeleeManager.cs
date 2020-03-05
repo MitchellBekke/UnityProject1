@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class MeleeManager : MonoBehaviour
 {
+    HitmarkerManager hitmarkerManager = null;
+
     public float damage = 80;
     public float range = 1;
     public LayerMask enemyLayers;
@@ -17,6 +19,7 @@ public class MeleeManager : MonoBehaviour
     public bool IsMelee = false;
     void Start()
     {
+        hitmarkerManager = GameObject.Find("UIManager").GetComponent<HitmarkerManager>();
         weapon = GetComponentInChildren<Weapon>();
         tommyGun = GameObject.Find("Tommygun");
         switchBlade = GameObject.Find("Melee");
@@ -30,7 +33,7 @@ public class MeleeManager : MonoBehaviour
     }
     private void PlayMelee()
     {
-        if (Input.GetKeyDown(KeyCode.E) && !weapon.IsReloading && !weapon.IsAiming && !IsMelee && !weapon.IsSprinting && !weapon.IsSpawning)//kijk of ik niks doe met het wapen om vervolgens het mes te enablen en de tommygun te disablen. en doe dan attack logica
+        if (Input.GetKeyDown(KeyCode.E) && !weapon.IsReloading && !weapon.IsAiming && !IsMelee && !weapon.IsSpawning)//kijk of ik niks doe met het wapen om vervolgens het mes te enablen en de tommygun te disablen. en doe dan attack logica
         {
             //MELEE LOGICA HIER
             switchBlade.SetActive(true);
@@ -45,6 +48,7 @@ public class MeleeManager : MonoBehaviour
 
         foreach (Collider enemy in hitEnemies)
         {
+            StartCoroutine(hitmarkerManager.ShowHitmarker());
             enemy.GetComponent<HealthController>().ApplyDamage(damage); //voor elke overlapte enemy doe damage
         }
     }

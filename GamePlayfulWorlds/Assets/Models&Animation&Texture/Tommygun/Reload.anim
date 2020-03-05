@@ -11092,7 +11092,7 @@ AnimationClip:
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
     path: Dummy002/foregrip/Bip002 L Clavicle/Bip002 L UpperArm/Bip002 L Forearm/Bip002
-      L Hand/Bip002 L Finger4/Bip002 L Finger41
+      L Hand/Bip002 L Finger4
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -11103,7 +11103,7 @@ AnimationClip:
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
     path: Dummy002/foregrip/Bip002 L Clavicle/Bip002 L UpperArm/Bip002 L Forearm/Bip002
-      L Hand/Bip002 L Finger4/Bip002 L Finger41
+      L Hand/Bip002 L Finger4
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -11114,7 +11114,73 @@ AnimationClip:
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
     path: Dummy002/foregrip/Bip002 L Clavicle/Bip002 L UpperArm/Bip002 L Forearm/Bip002
-      L Hand/Bip002 L Finger4/Bip002 L Finger41
+      L Hand/Bip002 L Finger4
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: Dummy002/foregrip/Bip002 L Clavicle/Bip002 L UpperArm/Bip002 L Forearm/Bip002
+      L Hand/Bip002 L Finger1/Bip002 L Finger11/Bip002 L Finger12
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: Dummy002/foregrip/Bip002 L Clavicle/Bip002 L UpperArm/Bip002 L Forearm/Bip002
+      L Hand/Bip002 L Finger1/Bip002 L Finger11/Bip002 L Finger12
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: Dummy002/foregrip/Bip002 L Clavicle/Bip002 L UpperArm/Bip002 L Forearm/Bip002
+      L Hand/Bip002 L Finger1/Bip002 L Finger11/Bip002 L Finger12
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: Dummy002/foregrip/Bip002 L Clavicle/Bip002 L UpperArm/Bip002 L Forearm/Bip002
+      L Hand/Bip002 L Finger3
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: Dummy002/foregrip/Bip002 L Clavicle/Bip002 L UpperArm/Bip002 L Forearm/Bip002
+      L Hand/Bip002 L Finger3
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: Dummy002/foregrip/Bip002 L Clavicle/Bip002 L UpperArm/Bip002 L Forearm/Bip002
+      L Hand/Bip002 L Finger3
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -11190,8 +11256,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: Dummy002/foregrip/Bip002 L Clavicle/Bip002 L UpperArm/Bip002 L Forearm/Bip002
-      L Hand/Bip002 L Finger2/Bip002 L Finger21
+    path: Dummy002/foregrip/Bip002 L Clavicle/Bip002 L UpperArm/Bip002 L Forearm
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -11201,8 +11266,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: Dummy002/foregrip/Bip002 L Clavicle/Bip002 L UpperArm/Bip002 L Forearm/Bip002
-      L Hand/Bip002 L Finger2/Bip002 L Finger21
+    path: Dummy002/foregrip/Bip002 L Clavicle/Bip002 L UpperArm/Bip002 L Forearm
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -11212,41 +11276,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: Dummy002/foregrip/Bip002 L Clavicle/Bip002 L UpperArm/Bip002 L Forearm/Bip002
-      L Hand/Bip002 L Finger2/Bip002 L Finger21
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: Dummy002/foregrip/Bip002 L Clavicle/Bip002 L UpperArm/Bip002 L Forearm/Bip002
-      L Hand/Bip002 L Finger4
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: Dummy002/foregrip/Bip002 L Clavicle/Bip002 L UpperArm/Bip002 L Forearm/Bip002
-      L Hand/Bip002 L Finger4
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: Dummy002/foregrip/Bip002 L Clavicle/Bip002 L UpperArm/Bip002 L Forearm/Bip002
-      L Hand/Bip002 L Finger4
+    path: Dummy002/foregrip/Bip002 L Clavicle/Bip002 L UpperArm/Bip002 L Forearm
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -11290,7 +11320,7 @@ AnimationClip:
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
     path: Dummy002/foregrip/Bip002 L Clavicle/Bip002 L UpperArm/Bip002 L Forearm/Bip002
-      L Hand/Bip002 L Finger0
+      L Hand/Bip002 L Finger1/Bip002 L Finger11
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -11301,7 +11331,7 @@ AnimationClip:
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
     path: Dummy002/foregrip/Bip002 L Clavicle/Bip002 L UpperArm/Bip002 L Forearm/Bip002
-      L Hand/Bip002 L Finger0
+      L Hand/Bip002 L Finger1/Bip002 L Finger11
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -11312,7 +11342,7 @@ AnimationClip:
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
     path: Dummy002/foregrip/Bip002 L Clavicle/Bip002 L UpperArm/Bip002 L Forearm/Bip002
-      L Hand/Bip002 L Finger0
+      L Hand/Bip002 L Finger1/Bip002 L Finger11
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -11323,7 +11353,7 @@ AnimationClip:
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
     path: Dummy002/foregrip/Bip002 L Clavicle/Bip002 L UpperArm/Bip002 L Forearm/Bip002
-      L Hand/Bip002 L Finger1/Bip002 L Finger11/Bip002 L Finger12
+      L Hand/Bip002 L Finger4/Bip002 L Finger41
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -11334,7 +11364,7 @@ AnimationClip:
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
     path: Dummy002/foregrip/Bip002 L Clavicle/Bip002 L UpperArm/Bip002 L Forearm/Bip002
-      L Hand/Bip002 L Finger1/Bip002 L Finger11/Bip002 L Finger12
+      L Hand/Bip002 L Finger4/Bip002 L Finger41
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -11345,7 +11375,7 @@ AnimationClip:
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
     path: Dummy002/foregrip/Bip002 L Clavicle/Bip002 L UpperArm/Bip002 L Forearm/Bip002
-      L Hand/Bip002 L Finger1/Bip002 L Finger11/Bip002 L Finger12
+      L Hand/Bip002 L Finger4/Bip002 L Finger41
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -11385,7 +11415,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: magazine004
+    path: Dummy002/Magazine
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -11395,7 +11425,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: magazine004
+    path: Dummy002/Magazine
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -11405,7 +11435,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: magazine004
+    path: Dummy002/Magazine
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -11415,7 +11445,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: Dummy002/foregrip/Bip002 L Clavicle/Bip002 L UpperArm
+    path: 
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -11425,7 +11455,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: Dummy002/foregrip/Bip002 L Clavicle/Bip002 L UpperArm
+    path: 
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -11435,7 +11465,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: Dummy002/foregrip/Bip002 L Clavicle/Bip002 L UpperArm
+    path: 
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -11445,7 +11475,8 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: Dummy002/Magazine
+    path: Dummy002/foregrip/Bip002 L Clavicle/Bip002 L UpperArm/Bip002 L Forearm/Bip002
+      L Hand/Bip002 L Finger0
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -11455,7 +11486,8 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: Dummy002/Magazine
+    path: Dummy002/foregrip/Bip002 L Clavicle/Bip002 L UpperArm/Bip002 L Forearm/Bip002
+      L Hand/Bip002 L Finger0
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -11465,7 +11497,8 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: Dummy002/Magazine
+    path: Dummy002/foregrip/Bip002 L Clavicle/Bip002 L UpperArm/Bip002 L Forearm/Bip002
+      L Hand/Bip002 L Finger0
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -11575,7 +11608,7 @@ AnimationClip:
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
     path: Dummy002/foregrip/Bip002 L Clavicle/Bip002 L UpperArm/Bip002 L Forearm/Bip002
-      L Hand/Bip002 L Finger1/Bip002 L Finger11
+      L Hand/Bip002 L Finger2/Bip002 L Finger21
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -11586,7 +11619,7 @@ AnimationClip:
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
     path: Dummy002/foregrip/Bip002 L Clavicle/Bip002 L UpperArm/Bip002 L Forearm/Bip002
-      L Hand/Bip002 L Finger1/Bip002 L Finger11
+      L Hand/Bip002 L Finger2/Bip002 L Finger21
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -11597,7 +11630,7 @@ AnimationClip:
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
     path: Dummy002/foregrip/Bip002 L Clavicle/Bip002 L UpperArm/Bip002 L Forearm/Bip002
-      L Hand/Bip002 L Finger1/Bip002 L Finger11
+      L Hand/Bip002 L Finger2/Bip002 L Finger21
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -11607,8 +11640,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: Dummy002/foregrip/Bip002 L Clavicle/Bip002 L UpperArm/Bip002 L Forearm/Bip002
-      L Hand/Bip002 L Finger3
+    path: Dummy002/foregrip/Bip002 L Clavicle/Bip002 L UpperArm
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -11618,8 +11650,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: Dummy002/foregrip/Bip002 L Clavicle/Bip002 L UpperArm/Bip002 L Forearm/Bip002
-      L Hand/Bip002 L Finger3
+    path: Dummy002/foregrip/Bip002 L Clavicle/Bip002 L UpperArm
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -11629,8 +11660,27 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: Dummy002/foregrip/Bip002 L Clavicle/Bip002 L UpperArm/Bip002 L Forearm/Bip002
-      L Hand/Bip002 L Finger3
+    path: Dummy002/foregrip/Bip002 L Clavicle/Bip002 L UpperArm
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: magazine004
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: magazine004
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -11640,57 +11690,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: Dummy002/foregrip/Bip002 L Clavicle/Bip002 L UpperArm/Bip002 L Forearm
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: Dummy002/foregrip/Bip002 L Clavicle/Bip002 L UpperArm/Bip002 L Forearm
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: Dummy002/foregrip/Bip002 L Clavicle/Bip002 L UpperArm/Bip002 L Forearm
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: 
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: 
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: 
+    path: magazine004
     classID: 4
     script: {fileID: 0}
   m_HasGenericRootTransform: 1

@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Weapon : MonoBehaviour
 {
-    
+    HitmarkerManager hitmarkerManager = null;
     private Animator anim;// de animator op het wapen
     private AudioSource _AudioSource;// 0 idee eerlijk gezegd, maar ik neem aan de plek waar audio vandaan komt
 
@@ -45,7 +45,7 @@ public class Weapon : MonoBehaviour
     public bool IsReloading;//is de speler aan het reloaden ja of nee?
     public bool IsSpawning;// is de speler aan het inspawnen?
     public bool IsAiming;// is de speler aan het aimen ja of nee?
-    public bool IsSprinting;
+    public bool IsSprinting;// is de speler aan het sprinten ja of nee?
 
     private void OnEnable()
     {
@@ -54,7 +54,8 @@ public class Weapon : MonoBehaviour
     void Start()
     {
         //VERGEET NIET HIER ALLES TE ASIGNEN ZODAT ALS JE LATER RESPAWNING DOET ALLES ASIGNED WORD
-        
+
+        hitmarkerManager = GameObject.Find("UIManager").GetComponent<HitmarkerManager>();
         anim = GetComponent<Animator>();//pakt animator van het wapen en linked anim
         _AudioSource = GetComponent<AudioSource>();//pakt audiosource van het wapen en linked _AudioSource
 
@@ -100,21 +101,21 @@ public class Weapon : MonoBehaviour
         AnimatorStateInfo info = anim.GetCurrentAnimatorStateInfo(0);
                 
         anim.SetBool("Aim", IsAiming); // zet de bool aim in de animator gelijk aan de bool IsAiming
-        anim.SetBool("Sprint", IsSprinting);//zet de bool sprint in de animator gelijk aan de bool IsSprinting
+        anim.SetBool("SprintRun", IsSprinting);//zet de bool sprint in de animator gelijk aan de bool IsSprinting
     }
 
     private void AimDownSights()//Aim functie
     {
-        if (Input.GetButton("Fire2") && !IsReloading && !IsSpawning && !IsSprinting)//kijkt of je Rechtermuisknop doet zo ja aim
+        if (Input.GetButton("Fire2") && !IsReloading && !IsSpawning)//kijkt of je Rechtermuisknop doet zo ja aim
         {
-            transform.localPosition = Vector3.Lerp(transform.localPosition, aimPosition, Time.deltaTime * AODspeed);
             IsAiming = true;
+            transform.localPosition = Vector3.Lerp(transform.localPosition, aimPosition, Time.deltaTime * AODspeed);
             worldCamera.fieldOfView = Mathf.Lerp(worldCamera.fieldOfView, FOVAimCamera, Time.deltaTime * smoothAiming);
         }
         else
         {
-            transform.localPosition = Vector3.Lerp(transform.localPosition, originalPosition, Time.deltaTime * AODspeed);
             IsAiming = false;
+            transform.localPosition = Vector3.Lerp(transform.localPosition, originalPosition, Time.deltaTime * AODspeed);
            worldCamera.fieldOfView = Mathf.Lerp(worldCamera.fieldOfView, FOVStartCamera, Time.deltaTime * smoothAiming);
         }
     }
@@ -147,6 +148,7 @@ public class Weapon : MonoBehaviour
 
             if (hit.transform.GetComponent<HealthController>())//als het een script heeft genaamd Healthcontroller doe dit ommando
             {
+                StartCoroutine(hitmarkerManager.ShowHitmarker());
                 hit.transform.GetComponent<HealthController>().ApplyDamage(damage); //stuurt het damage variabel naar het healthcontroller script.
             }
         }
@@ -213,7 +215,7 @@ public class Weapon : MonoBehaviour
 
     private void Sprinting()//Aim functie
     {
-        if (Input.GetKey(KeyCode.LeftShift) && !IsReloading)//Sprintlogica
+        if (Input.GetKey(KeyCode.LeftShift) && !IsReloading && !IsAiming)//Sprintlogica
         {
             IsSprinting = true;
         }
