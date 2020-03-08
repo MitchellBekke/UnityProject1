@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MeleeManager : MonoBehaviour
 {
-    HitmarkerManager hitmarkerManager = null;
+    UImanager uiManager = null;
 
     public float damage = 80;
     public float range = 1;
@@ -19,7 +19,7 @@ public class MeleeManager : MonoBehaviour
     public bool IsMelee = false;
     void Start()
     {
-        hitmarkerManager = GameObject.Find("UIManager").GetComponent<HitmarkerManager>();
+        uiManager = GameObject.Find("UISoundManager").GetComponent<UImanager>();
         weapon = GetComponentInChildren<Weapon>();
         tommyGun = GameObject.Find("Tommygun");
         switchBlade = GameObject.Find("Melee");
@@ -48,7 +48,7 @@ public class MeleeManager : MonoBehaviour
 
         foreach (Collider enemy in hitEnemies)
         {
-            StartCoroutine(hitmarkerManager.ShowHitmarker());
+            StartCoroutine(uiManager.ShowHitmarker());
             enemy.GetComponent<HealthController>().ApplyDamage(damage); //voor elke overlapte enemy doe damage
         }
     }

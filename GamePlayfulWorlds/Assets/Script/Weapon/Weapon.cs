@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Weapon : MonoBehaviour
 {
-    HitmarkerManager hitmarkerManager = null;
+    UImanager uiManager = null;
     private Animator anim;// de animator op het wapen
     private AudioSource _AudioSource;// 0 idee eerlijk gezegd, maar ik neem aan de plek waar audio vandaan komt
 
@@ -55,12 +55,15 @@ public class Weapon : MonoBehaviour
     {
         //VERGEET NIET HIER ALLES TE ASIGNEN ZODAT ALS JE LATER RESPAWNING DOET ALLES ASIGNED WORD
 
-        hitmarkerManager = GameObject.Find("UIManager").GetComponent<HitmarkerManager>();
+        uiManager = GameObject.Find("UISoundManager").GetComponent<UImanager>();
         anim = GetComponent<Animator>();//pakt animator van het wapen en linked anim
         _AudioSource = GetComponent<AudioSource>();//pakt audiosource van het wapen en linked _AudioSource
 
         currentBullets = bulletsPerMag; // zorgt voor een geladen magazijn
         originalPosition = transform.localPosition;// zet de orginele positie gelijk aan wat je hebt als je spawned
+        crosshair = GameObject.Find("Crosshair").GetComponent<Image>();
+        ammoText = GameObject.Find("BulletCount").GetComponent<TMPro.TextMeshProUGUI>();
+        totalBulletText = GameObject.Find("TotalBullets").GetComponent<TMPro.TextMeshProUGUI>();
         UpdateAmmoText();// Update de text UI
 
     }
@@ -148,7 +151,7 @@ public class Weapon : MonoBehaviour
 
             if (hit.transform.GetComponent<HealthController>())//als het een script heeft genaamd Healthcontroller doe dit ommando
             {
-                StartCoroutine(hitmarkerManager.ShowHitmarker());
+                StartCoroutine(uiManager.ShowHitmarker());
                 hit.transform.GetComponent<HealthController>().ApplyDamage(damage); //stuurt het damage variabel naar het healthcontroller script.
             }
         }
@@ -195,7 +198,7 @@ public class Weapon : MonoBehaviour
         _AudioSource.PlayOneShot(shootSound);
     }
 
-    private void UpdateAmmoText()
+    public void UpdateAmmoText()
     {
         ammoText.text = currentBullets + "/" + bulletsPerMag;// 50/50
         totalBulletText.text = bulletsLeft.ToString(); //200

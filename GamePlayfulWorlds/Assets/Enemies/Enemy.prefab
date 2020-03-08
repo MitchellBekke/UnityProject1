@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1765053213205759774}
   - component: {fileID: 6522630615880725604}
   - component: {fileID: 8173804178909410524}
+  - component: {fileID: 1170295474}
   m_Layer: 5
   m_Name: HealthBarUI
   m_TagString: Untagged
@@ -36,7 +37,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -0.436, y: 0.974}
+  m_AnchoredPosition: {x: 0.007, y: 0.974}
   m_SizeDelta: {x: 620, y: 367.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &1765053213205759774
@@ -99,6 +100,19 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &1170295474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2494641013851407406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fc36fb1ff9ab8e4983d772327d709f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 0}
 --- !u!1 &2731010641026796847
 GameObject:
   m_ObjectHideFlags: 0
@@ -160,7 +174,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0272461039c8efc458907199244bd679, type: 2}
+  - {fileID: 2100000, guid: 6bd5214e97d27374a8ea113569353a3f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -195,6 +209,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startHealth: 150
   health: 0
+  randomNummerMin: 1
+  randomNummerMax: 5
+  ammoDrop: {fileID: 7501385933700352186, guid: 2ae591935c646e44a806d9e16264054a,
+    type: 3}
+  juisteGetal: 2
   healthBar: {fileID: 641434256120151196}
 --- !u!65 &9212157712338277693
 BoxCollider:
@@ -267,7 +286,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.2515723, g: 0.6037736, b: 0, a: 1}
+  m_Color: {r: 0.8490566, g: 0.10267323, b: 0.028034903, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -341,7 +360,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.40392157}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
