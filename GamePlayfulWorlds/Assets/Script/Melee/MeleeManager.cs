@@ -33,7 +33,7 @@ public class MeleeManager : MonoBehaviour
     }
     private void PlayMelee()
     {
-        if (Input.GetKeyDown(KeyCode.E) && !weapon.IsReloading && !weapon.IsAiming && !IsMelee && !weapon.IsSpawning)//kijk of ik niks doe met het wapen om vervolgens het mes te enablen en de tommygun te disablen. en doe dan attack logica
+        if (Input.GetKeyDown(KeyCode.E) && !weapon.IsReloading && !weapon.IsAiming && !IsMelee && !weapon.IsSpawning && !weapon.IsSprinting)//kijk of ik niks doe met het wapen om vervolgens het mes te enablen en de tommygun te disablen. en doe dan attack logica
         {
             //MELEE LOGICA HIER
             switchBlade.SetActive(true);

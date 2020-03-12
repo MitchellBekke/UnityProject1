@@ -9,11 +9,15 @@ public class HealthController : MonoBehaviour
     [SerializeField] private float health = 100;//health duh 
 
     public int randomNummerMin = 1; // voor spawn van drops
-    public int randomNummerMax = 10;// voor spawn van drops
+    public int randomNummerMaxAmmo = 5;// voor spawn van drops
+
+    public int randomNummerMaxHealth = 10;// voor spawn van drops
 
     public Transform ammoDrop;
+    public Transform healthDrop;
 
-    public int juisteGetal = 5;// dit getal zodat de drop spawned
+    public int juisteGetalAmmo = 5;// dit getal zodat de drop spawned
+    public int juisteGetalHealth = 4;
 
     public Image healthBar;
     public void Awake()
@@ -29,10 +33,15 @@ public class HealthController : MonoBehaviour
 
         if (health <= 0)
         {
-            int ranNum = Random.Range(randomNummerMin, randomNummerMax);
-            if(ranNum == juisteGetal)
+            int ranNumAmmo = Random.Range(randomNummerMin, randomNummerMaxAmmo);
+            int ranNumHeart = Random.Range(randomNummerMin, randomNummerMaxHealth);
+            if(ranNumAmmo == juisteGetalAmmo)
             {
                 Instantiate(ammoDrop, gameObject.transform.position, gameObject.transform.rotation);
+            }
+            else if(ranNumHeart == juisteGetalHealth)
+            {
+                Instantiate(healthDrop, gameObject.transform.position, gameObject.transform.rotation);
             }
             Destroy(gameObject);
         }

@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Weapon : MonoBehaviour
 {
     UImanager uiManager = null;
-    private Animator anim;// de animator op het wapen
+    public Animator anim;// de animator op het wapen
     private AudioSource _AudioSource;// 0 idee eerlijk gezegd, maar ik neem aan de plek waar audio vandaan komt
 
     [Header("Properties")]
@@ -22,6 +22,9 @@ public class Weapon : MonoBehaviour
     public int bulletsLeft = 200;// Total bullets
     public int FOVStartCamera = 67;// start punt van de weapon camera
     public int FOVAimCamera = 55;// ingezoomde punt van de weapon cam na het aimen
+
+    public float sprintAnimProperty = 0.1f;
+    public float moveForwardSpeed;
 
 
     [Header("Input")]
@@ -41,20 +44,21 @@ public class Weapon : MonoBehaviour
     float fireTimer; // time counter for the delay
 
     private Vector3 originalPosition;// positie van het wapen als we inladen
-    
+
     public bool IsReloading;//is de speler aan het reloaden ja of nee?
     public bool IsSpawning;// is de speler aan het inspawnen?
     public bool IsAiming;// is de speler aan het aimen ja of nee?
     public bool IsSprinting;// is de speler aan het sprinten ja of nee?
+    public bool HOLDNAARSPAWN;//deze is puur omdat ik kut ben oke vertrouw me. dit zorgt zodat je weer terug kan gaan naar de spawn anim vanaf de hold anim
 
     private void OnEnable()
     {
         IsSpawning = true;
     }
+
     void Start()
     {
         //VERGEET NIET HIER ALLES TE ASIGNEN ZODAT ALS JE LATER RESPAWNING DOET ALLES ASIGNED WORD
-
         uiManager = GameObject.Find("UISoundManager").GetComponent<UImanager>();
         anim = GetComponent<Animator>();//pakt animator van het wapen en linked anim
         _AudioSource = GetComponent<AudioSource>();//pakt audiosource van het wapen en linked _AudioSource
@@ -65,7 +69,6 @@ public class Weapon : MonoBehaviour
         ammoText = GameObject.Find("BulletCount").GetComponent<TMPro.TextMeshProUGUI>();
         totalBulletText = GameObject.Find("TotalBullets").GetComponent<TMPro.TextMeshProUGUI>();
         UpdateAmmoText();// Update de text UI
-
     }
     void Update()
     {
@@ -97,6 +100,7 @@ public class Weapon : MonoBehaviour
         UpdateCrosshair();//kijkt of je aimed en zo ja haalt de crosshair weg
 
         anim.SetFloat("Vertical", Input.GetAxis("Vertical"));
+        moveForwardSpeed = anim.GetFloat("Vertical");
     }
 
     private void FixedUpdate()
@@ -105,6 +109,7 @@ public class Weapon : MonoBehaviour
                 
         anim.SetBool("Aim", IsAiming); // zet de bool aim in de animator gelijk aan de bool IsAiming
         anim.SetBool("SprintRun", IsSprinting);//zet de bool sprint in de animator gelijk aan de bool IsSprinting
+        anim.SetBool("HOLDNAARSPAWN", HOLDNAARSPAWN);
     }
 
     private void AimDownSights()//Aim functie
@@ -218,8 +223,9 @@ public class Weapon : MonoBehaviour
 
     private void Sprinting()//Aim functie
     {
-        if (Input.GetKey(KeyCode.LeftShift) && !IsReloading && !IsAiming)//Sprintlogica
+        if (Input.GetKey(KeyCode.LeftShift) && moveForwardSpeed >= sprintAnimProperty && !IsReloading && !IsAiming)//Sprintlogica
         {
+            //comment van hierboven: zorg dat de speler shift drukt en naar voren gaat voordat je pas de sprint anim doet, ook mag je niet reloaden en aimen
             IsSprinting = true;
         }
         else
