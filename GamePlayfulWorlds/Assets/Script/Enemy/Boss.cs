@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class Boss : MonoBehaviour
 {
+    public UImanager uiManager = null;
     HealthController healthController = null;
     public TMPro.TextMeshProUGUI victoryText;
     public GameObject spawner;
@@ -22,6 +23,7 @@ public class Boss : MonoBehaviour
         {
             victoryText.enabled = true;
             spawner.SetActive(false);
+            StartCoroutine(uiManager.BossDefeated());
         }
     }
 }

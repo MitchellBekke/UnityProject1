@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class UImanager : MonoBehaviour
 {
@@ -93,5 +94,10 @@ public class UImanager : MonoBehaviour
     public void PlayBossMusic()
     {
         _AudioSourceUI.PlayOneShot(bossMusic);
+    }
+    public IEnumerator BossDefeated()
+    {
+        yield return new WaitForSeconds(5f);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }

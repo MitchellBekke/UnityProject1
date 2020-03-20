@@ -26,7 +26,7 @@ public class TriggerBossRoom : MonoBehaviour
         if (pd != null)
         {
             weapon.IsReloading = false;
-            backgroundMusic.SetActive(false);
+            Destroy(backgroundMusic);
             animDeurL.CrossFadeInFixedTime("Niks", 0.1f);
             animDeurR.CrossFadeInFixedTime("Niks", 0.1f);
             spawner.SetActive(false);
