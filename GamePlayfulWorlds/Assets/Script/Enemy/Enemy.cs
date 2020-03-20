@@ -11,9 +11,11 @@ public class Enemy : MonoBehaviour
     private float attackTime = 1;
     private float attackTimer;
     public float startSpeed;
+    UImanager uiManager = null;
     // Start is called before the first frame update
     void Start()
     {
+        uiManager = GameObject.Find("UISoundManager").GetComponent<UImanager>();
         agent = GetComponent<NavMeshAgent>();
         player = GameObject.FindWithTag("Player").transform;
         startSpeed = agent.speed;
@@ -31,6 +33,7 @@ public class Enemy : MonoBehaviour
             }
             else
             {
+                StartCoroutine(uiManager.ShowRedScreen()); 
                 player.GetComponent<PlayerHealth>().ApplyDamage(damage);
                 agent.speed = 0;
                 attackTimer = attackTime;

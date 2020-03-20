@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class HealthController : MonoBehaviour
 {
     [SerializeField] private float startHealth = 100;//health duh 
-    [SerializeField] private float health = 100;//health duh 
+    public float health = 100;//health duh 
 
     public int randomNummerMin = 1; // voor spawn van drops
     public int randomNummerMaxAmmo = 5;// voor spawn van drops

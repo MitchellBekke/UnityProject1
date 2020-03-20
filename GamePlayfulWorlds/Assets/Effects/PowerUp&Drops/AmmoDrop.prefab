@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 209770159}
   - component: {fileID: 209770161}
   - component: {fileID: 209770160}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4765,7 +4765,7 @@ GameObject:
   - component: {fileID: 3618654803574355643}
   - component: {fileID: 677404504869265770}
   - component: {fileID: 8673446352371607866}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: magazine011
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4844,7 +4844,7 @@ GameObject:
   - component: {fileID: 3106836634953075406}
   - component: {fileID: 3085476771062940134}
   - component: {fileID: 4871966720401913254}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: magazine007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4923,7 +4923,7 @@ GameObject:
   - component: {fileID: 3907080474902468573}
   - component: {fileID: 5450472367610717280}
   - component: {fileID: 5337888985209908167}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: magazine006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5002,7 +5002,7 @@ GameObject:
   - component: {fileID: 3806410930321348999}
   - component: {fileID: 434984175018105913}
   - component: {fileID: 5321253930750461850}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: magazine005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5081,7 +5081,7 @@ GameObject:
   - component: {fileID: 7043357399884181242}
   - component: {fileID: 532405784015907499}
   - component: {fileID: 7971254007713677309}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: magazine004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5161,7 +5161,7 @@ GameObject:
   - component: {fileID: 2341427183506940799}
   - component: {fileID: 7990927691056200321}
   - component: {fileID: 2095293423902498690}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: magazine009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5240,7 +5240,7 @@ GameObject:
   - component: {fileID: 6355606767831209071}
   - component: {fileID: 616227387511256329}
   - component: {fileID: 2187731061597170353}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: magazine012
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5319,7 +5319,7 @@ GameObject:
   - component: {fileID: 7537886821757710093}
   - component: {fileID: 3496316869107222090}
   - component: {fileID: 537397551374297768}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: magazine010
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5398,7 +5398,7 @@ GameObject:
   - component: {fileID: 7433277219883485221}
   - component: {fileID: 4562698372006762414}
   - component: {fileID: 2024227310639256276}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: magazine013
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5479,7 +5479,7 @@ GameObject:
   - component: {fileID: 7501385933700352184}
   - component: {fileID: 7501385933700352185}
   - component: {fileID: 7501385933700352190}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: AmmoDrop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5583,7 +5583,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5494974551381434920}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: BulletsPowerup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5625,7 +5625,7 @@ GameObject:
   - component: {fileID: 5292744549309533800}
   - component: {fileID: 4849338759493722959}
   - component: {fileID: 818509059275020487}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: magazine008
   m_TagString: Untagged
   m_Icon: {fileID: 0}

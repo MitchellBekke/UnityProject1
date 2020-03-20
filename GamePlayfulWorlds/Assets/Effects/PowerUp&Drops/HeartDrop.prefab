@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8744474491105749726}
   - component: {fileID: 8744474491105749712}
   - component: {fileID: 8744474491105749713}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4765,7 +4765,7 @@ GameObject:
   - component: {fileID: 8744474491530857678}
   - component: {fileID: 8744474491530857667}
   - component: {fileID: 8744474491530857664}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: Heart
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4843,7 +4843,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8744474492011607680}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: HeartDrop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4878,7 +4878,7 @@ GameObject:
   - component: {fileID: 8744474492118412245}
   - component: {fileID: 8744474492118412242}
   - component: {fileID: 8744474492118412243}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: HeartDrop
   m_TagString: Untagged
   m_Icon: {fileID: 0}

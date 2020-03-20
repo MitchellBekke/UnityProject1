@@ -6,6 +6,7 @@ public class AmmoDrop : MonoBehaviour
 {
     public Weapon weapon;
     UImanager uiManager = null;
+    public int ammodropCount = 40;
     private void Start()
     {
         uiManager = GameObject.Find("UISoundManager").GetComponent<UImanager>();
@@ -22,7 +23,7 @@ public class AmmoDrop : MonoBehaviour
     {
         if (weapon != null)
         {
-            weapon.bulletsLeft = weapon.bulletsLeft + 30;
+            weapon.bulletsLeft = weapon.bulletsLeft + ammodropCount;
             weapon.UpdateAmmoText();
             uiManager.PlayPickUpSound();
             Destroy(gameObject);
