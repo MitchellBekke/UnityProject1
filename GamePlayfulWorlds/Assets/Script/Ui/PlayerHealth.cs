@@ -39,7 +39,6 @@ public class PlayerHealth : MonoBehaviour
 
         if (currentHealth <= 0)
         {
-            backgroundMusic.SetActive(true);
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             //Destroy(gameObject);
         }

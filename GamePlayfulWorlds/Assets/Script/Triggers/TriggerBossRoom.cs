@@ -18,7 +18,10 @@ public class TriggerBossRoom : MonoBehaviour
     public void Start()
     {
         weapon = GameObject.Find("Tommygun").GetComponent<Weapon>();
-        backgroundMusic = GameObject.Find("BackgroundMusic");
+        if(GameObject.Find("BackgroundMusic") != null)
+        {
+            backgroundMusic = GameObject.Find("BackgroundMusic");
+        }
     }
     private void OnTriggerEnter(Collider other)
     {
